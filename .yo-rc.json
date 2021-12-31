@@ -43,6 +43,11 @@
     "clientThemeVariant": "",
     "languages": ["en", "es"],
     "devServerPort": 4200,
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["Blog", "Post", "Tag"],
+    "lastLiquibaseTimestamp": 1640872035000,
+    "herokuAppName": "jhipster-7-app-by-ush",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "11"
   }
 }

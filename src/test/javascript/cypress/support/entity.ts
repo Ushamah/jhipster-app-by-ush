@@ -41,7 +41,8 @@ Cypress.Commands.add('getEntityDeleteDialogHeading', (entityInstanceName: string
 Cypress.Commands.add('setFieldImageAsBytesOfEntity', (fieldName: string, fileName: string, mimeType: string) => {
   // fileName is the image which you have already put in cypress fixture folder
   // should be like : 'integration-test.png', 'image/png'
-  cy.fixture(fileName)
+  return cy
+    .fixture(fileName)
     .as('image')
     .get(`[data-cy="${fieldName}"]`)
     .then(function (el) {
